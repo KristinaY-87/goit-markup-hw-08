@@ -1,0 +1,42 @@
+.contacts-list {
+  align-items: center;
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.mail-link {
+  margin-bottom: 16px;
+
+  @include for-size(tablet) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  @include for-size(desktop) {
+    margin-right: 50px;
+  }
+}
+.contacts-item {
+  font-size: 18px;
+  line-height: 1.167;
+
+  @include for-size(tablet) {
+    font-size: 12px;
+  }
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+}
+.contacts-item:hover .contacts-item-svg,
+.contacts-item:focus .contacts-item-svg {
+  fill: $accent-cl;
+}
+
+.contacts-item-svg {
+  fill: $main-text-cl;
+  margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

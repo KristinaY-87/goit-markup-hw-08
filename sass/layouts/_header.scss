@@ -1,0 +1,26 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  @include for-size(tablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include for-size(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $accent-cl;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}

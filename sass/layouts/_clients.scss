@@ -1,0 +1,48 @@
+.list-clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.clients-icons-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc(100% / 2 - 30px);
+
+  @include for-size(tablet) {
+    width: calc(100% / 3 - 30px);
+  }
+}
+// // .clients-icons-item:not(:last-child) {
+// //   margin-right: 30px;
+// // }
+@include for-size(desktop) {
+  .list-clients {
+    flex-wrap: nowrap;
+  }
+}
+.clients-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background-color: $white;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: $accent-cl;
+  }
+
+  &:hover .clients-icons-svg,
+  &:focus .clients-icons-svg {
+    fill: $accent-cl;
+  }
+}
+.clients-icons-svg {
+  fill: $gray;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
