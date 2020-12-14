@@ -108,8 +108,4 @@
 .btn-send {
   padding-right: 55px;
   padding-left: 55px;
-  margin-left: 85px;
-  @include for-size(desktop) {
-    margin-left: 124px;
-  }
 }
