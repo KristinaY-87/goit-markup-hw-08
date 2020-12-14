@@ -120,7 +120,9 @@ h3 {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  position: relative;
+  margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 4px;
